@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <title>Book Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="icon" href="images/logo-new.png" />
-  <title>Book Store</title>
 </head>
 
 <body>
+
   <div id="header">
     <div id="left">
       <img src="images/logo-new.png" alt="" />
@@ -40,49 +44,18 @@
   <div id="img-nexttoheader">
     <img src="images/nexttoheader.jpg" alt="" />
   </div>
-  <div id="slidder">
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <img src="images/firstimg.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/secondimg.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/thirdimg.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/fourthimg.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/fifthimg.jpg" style="width: 100%" />
-      </div>
-
-      <div class="mySlides fade">
-        <img src="images/sixthimg.jpg" style="width: 100%" />
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/fifthimg.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="images/firstimg.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="images/fourthimg.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="images/secondimg.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="images/thirdimg.jpg" alt="" /></div>
     </div>
-    <br />
-
-    <!-- The dots/circles -->
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
 
   <div id="arrival">
@@ -214,8 +187,11 @@
       <a href="#">Sitemap</a>
     </div>
   </footer>
-  
-  <script src="script.js"></script>
+
+
 </body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 
 </html>
